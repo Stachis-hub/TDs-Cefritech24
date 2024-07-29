@@ -12,6 +12,7 @@
 
     <body>
         <div class="container mt-4">
+            <?php include('message.php'); ?>
             <div class="row">
                 <div class="col-md-12">
                     <div class="card">
@@ -52,7 +53,11 @@
                                             <td>
                                                 <a href=""> voir </a>
                                                 <a href=""> éditer </a>
-                                                <a href=""> supprimer </a>
+                                                <form action = "code.php" method="POST" class="d-inline">
+                                                    <button type="submit" name="delete_student" value="<?= $student['id']; ?>" class="btn btn-danger btn-sm">
+                                                        Supprimer
+                                                    </button>
+                                                </form>
                                             </td>
                                             </tr>
                                             <?php 

@@ -28,10 +28,7 @@ session_start();
                     </div>
                     <div class="card-body">
                         <form action="code.php" method="POST">
-                        <div class="mb-3">
-                                <label>Identifiant</label>
-                                <input type="text" name="id" class="form-control">
-                            </div>
+                        
 
                             <div class="mb-3">
                                 <label>Nom</label>
