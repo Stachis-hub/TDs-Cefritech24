@@ -15,7 +15,7 @@ session_start();
     <title>Créer un Etudiant</title>
 </head>
 <body>
-  
+
     <div class="container mt-5">
 
         <div class="row">
@@ -28,6 +28,7 @@ session_start();
                     </div>
                     <div class="card-body">
                         <form action="code.php" method="POST">
+                        
 
                             <div class="mb-3">
                                 <label>Nom</label>
@@ -44,6 +45,10 @@ session_start();
                             <div class="mb-3">
                                 <label>Student Cours</label>
                                 <input type="text" name="course" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label>Date de naissance</label>
+                                <input type="date" name="birthdate" class="form-control">
                             </div>
                             <div class="mb-3">
                                 <button type="submit" name="save_student" class="btn btn-primary">Ajouter</button>
