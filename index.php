@@ -51,9 +51,9 @@
                                             <td> <?= $student['phone']; ?> </td>
                                             <td> <?= $student['course']; ?> </td>
                                             <td> <?= $student['birthdate']; ?> </td>
-                                            <td>
-                                                <a href=""> voir </a>
-                                                <a href=""> éditer </a>
+                                            <td style="display: flex;">
+                                                <a href="view.php?id=<?=$student['id']; ?>" class=" btn btn-primary btn-sm"> Voir </a>
+                                                <a style="margin: 0px 1%;" href="edit.php?id=<?=$student['id']; ?>" class=" btn btn-success btn-sm"> Editer </a>
                                                 <form action = "code.php" method="POST" class="d-inline">
                                                     <button type="submit" name="delete_student" value="<?= $student['id']; ?>" class="btn btn-danger btn-sm">
                                                         Supprimer
